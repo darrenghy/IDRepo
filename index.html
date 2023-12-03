@@ -4,35 +4,160 @@
     <title>Assignment 1</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
+  <style>
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    form {
+      text-align: center;
+    }
+  
+    a:link {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  
+    .container {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      flex-wrap: wrap;
+    }
+  
+    .flex-item {
+      padding: 5%;
+      flex-grow: 1;
+      flex-basis: 39%;
+  
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #D3D3D3;
+    }
+  
+    .flex-img img {
+      max-width: 100%;
+    }
+  
+    .flex-info {
+      margin-top: auto;
+    }
+  
+    @media (max-width: 920px) {
+      .flex-item {
+        flex: 1 51%;
+      }
+  
+      img {
+        width: 400px;
+      }
+  </style>
+  
   <body>
-    <div style="text-align:center; margin-top:40px;"><img src="logo.png"></div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HCO9HgJFfW8?si=kf4Frw3wARM934_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p>This is our entry for Jamie Oliver's Search for a Food Tube Star with Uncle Ben's competition. If you're a Singaporean, there's NO CHANCE that you wouldn't know our iconic dish - Chicken Rice.</p>
-
-    <p>We all know that Gordon Ramsay came to Singapore a couple weeks back to compete with our local hawkers, and this dish being one of the competing dishes, became our inspiration to pay tribute to the man himself. ????</p>
-    
-    <p>With all the days of research done on the ultimate chicken rice, this is our tribute, done THE F WORD STYLE, to Gordon Ramsay. Enjoy</p>
-    
-    <h2>Ingredients</h2>
-
-    <h3>Chicken</h3>
-    <ul>
-      <li>1x chicken (1.6kg)</li>
-      <li>1 bunch spring onion</li>
-      <li>Half knob ginger (cut)</li>
-      <li>Chicken Stock or water</li>
-    </ul>
-
-    <h3>Rice</h3>
-    <ol>
-      <li>3 cup thai jasmine rice</li>
-      <li>4 tbsp chicken fats, fried with 8 cloves of garlic (bashed) and half a knob of ginger (thick slices)</li>
-      <li>800 ml Chicken stock (from cooking chicken)</li>
-      <li>a bundle of pandan leaf</li>
-      <li>salt to taste</li>
-    </ol>
-
-
-    <!-- your code should end --> 
-  </body>
+    <div style="text-align: center; margin-top: 40px;"><img src="https://www.inkengineers.com/works/5/7.jpg"></div>
+    <script src="script.js"></script>
+  
+    <div style="text-align: center; margin-top:40px;">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#our_services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  
+    <h1>Elevate your Brand, Ignite Success</h1>
+  
+    <p style="font-size:20px; text-align: center; line-height: 30px; margin-bottom: 50px;">Digitilize Your Success. <br>
+      Transform Visions into Clicks. </p>
+  
+    <div style="text-align: center; margin-top:40px;">
+      <a href="#learn">Learn More</a>
+    </div>
+  
+    <hr style="width: 60%;">
+  
+    <h1 id="about">About Us</h1>
+  
+    <p style="font-size:20px; text-align: center; line-height: 30px; margin-bottom: 50px;">Hello there! We are a marketing
+      company with specialties that can for sure help our clients reach their targeted audience with our extensive
+      research team.</p>
+  
+  
+  
+    <hr style="width: 60%;">
+  
+    <h1 id="our_services">Our Services</h1>
+  
+    <section class="container">
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="https://thumbs.dreamstime.com/b/marketing-icons-set-cartoon-style-white-background-73094725.jpg">
+        </div>
+        <div class="flex-info">
+          <h4>Marketing Campaign</h4>
+          <p>We can help our clients make a 30-Day marketing campaign to help promote them.</p>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="https://th.bing.com/th/id/OIP.WJLH9XJcg8DIFTESdEHtCAHaEe?rs=1&pid=ImgDetMain">
+        </div>
+        <div class="flex-info">
+          <h4>Persona Research</h4>
+          <p>We can help our clients conduct personal research based on their audience, to help better their promotion of
+            products and services.</p>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="flex-img">
+          <img src="https://th.bing.com/th/id/OIP.AIQr-8q5BIMFcMUwXMT34QHaHa?rs=1&pid=ImgDetMain">
+        </div>
+        <div class="flex-info">
+          <h4>Social Media Ads</h4>
+          <p>We can provide advertisements on various social media platforms.</p>
+        </div>
+      </div>
+      <div class="flex-item">
+        <div class="flex-img">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/000/390/683/original/vector-illustration-of-business-branding.jpg">
+        </div>
+        <div class="flex-info">
+          <h4>Corporate Branding</h4>
+          <p>We can help plan and conceptualise your branding.</p>
+        </div>
+      </div>
+    </section>
+  
+    <hr style="width: 60%;">
+  
+    <h1 id="contact">Contact Us</h1>
+  
+    <form action="/action_page.php">
+      <label for="fname">Name:</label><br>
+      <input type="text" id="fname" name="fname" value="Name"><br>
+  
+      <label for="lname">Email:</label><br>
+      <input type="text" id="lname" name="lname" value="Email"><br>
+  
+      <label for="freeform">Enquiries:</label>
+      <br>
+  
+      <textarea id="freeform" name="freeform" rows="4" cols="50">
+      </textarea><br>
+      <input type="submit" value="Submit">
+    </form>
 </html>
